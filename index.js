@@ -9,13 +9,6 @@
 
 const driver = {};
 
-function updateDriverWithKeyAndValue(driver, key, value) {
-  // const newDriver = {...driver};
-  // newDriver.key = value;
-  // return newDriver; doesn't return new and original doesn't pass test
-  return Object.assign({}, driver, {[key]: value});
-}
-
 // from lesson
 // function nondestructivelyUpdateObject(obj, key, value) {
 //   return Object.assign({}, obj, { [key]: value });
@@ -28,6 +21,13 @@ function updateDriverWithKeyAndValue(driver, key, value) {
 // 
 //  return newObj;
 //}
+
+function updateDriverWithKeyAndValue(driver, key, value) {
+  // const newDriver = {...driver};
+  // newDriver.key = value;
+  // return newDriver; doesn't return new and original doesn't pass test
+  return Object.assign({}, driver, {[key]: value});
+}
 
 function destructivelyUpdateDriverWithKeyAndValue(driver, key, value) {
   // driver.key = value;
