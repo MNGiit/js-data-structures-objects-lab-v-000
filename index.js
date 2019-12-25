@@ -16,6 +16,11 @@ function updateDriverWithKeyAndValue(driver, key, value) {
   return Object.assign({}, driver, {[key]: value});
 }
 
+// from lesson
+// function nondestructivelyUpdateObject(obj, key, value) {
+//   return Object.assign({}, obj, { [key]: value });
+// }
+
 //function nondestructivelyUpdateObject(obj, key, value) {
 //  const newObj = { ...obj };
 // 
