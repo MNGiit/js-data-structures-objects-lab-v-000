@@ -31,6 +31,10 @@ function updateDriverWithKeyAndValue(driver, key, value) {
 
 function destructivelyUpdateDriverWithKeyAndValue(driver, key, value) {
   // driver.key = value;
+  // driver["key"];
+  // const key = "something"
+  // driver[key]
+  
   driver[key] = value; //this way passes test unlike driver.key = value;
   return driver;
 }
@@ -38,6 +42,7 @@ function destructivelyUpdateDriverWithKeyAndValue(driver, key, value) {
 function deleteFromDriverByKey(driver, key) {
   // const newDriver = {...driver};
   // above way works, but this one looks better
+  
   const newDriver = Object.assign({}, driver);
   delete newDriver[key];
   return newDriver;
