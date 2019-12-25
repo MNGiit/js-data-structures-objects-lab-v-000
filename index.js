@@ -4,6 +4,7 @@
 // How to use Object.assign()
 // Object.assign(initialObject, additionalObject, additionalObject, ...);
 // Object.assign(initialObject, key, value);
+// Object.assign({}, initialObject); the initialObject already has key value pairs
 // Object.assign() is a good way to NOT destructively Update Object
 
 const driver = {};
