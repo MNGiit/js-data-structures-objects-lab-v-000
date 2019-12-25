@@ -4,7 +4,7 @@ const driver = {};
 function updateDriverWithKeyAndValue(driver, key, value) {
   // const newDriver = {...driver};
   // newDriver.key = value;
-  // return newDriver; doesn't return new and original
+  // return newDriver; doesn't return new and original doesn't pass test
   return Object.assign({}, driver, {[key]: value});
 }
 
