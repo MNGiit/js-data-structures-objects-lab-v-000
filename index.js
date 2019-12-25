@@ -1,6 +1,11 @@
 // Write your solution in this file!
 // has solution already???
 
+// How to use Object.assign()
+// Object.assign(initialObject, additionalObject, additionalObject, ...);
+// Object.assign(initialObject, key, value);
+// Object.assign() is a good way to NOT destructively Update Object
+
 const driver = {};
 
 function updateDriverWithKeyAndValue(driver, key, value) {
@@ -17,8 +22,6 @@ function updateDriverWithKeyAndValue(driver, key, value) {
 // 
 //  return newObj;
 //}
-
-//Object.assign(initialObject, additionalObject, additionalObject, ...);
 
 function destructivelyUpdateDriverWithKeyAndValue(driver, key, value) {
   // driver.key = value;
