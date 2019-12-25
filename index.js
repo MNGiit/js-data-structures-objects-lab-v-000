@@ -2,9 +2,10 @@
 const driver = {};
 
 function updateDriverWithKeyAndValue(driver, key, value) {
-  //const newDriver = {...driver};
-  //newDriver.key = value;
-  return Object.assign({}, driver, {[key]: value});
+  const newDriver = {...driver};
+  newDriver.key = value;
+  return newDriver;
+  // return Object.assign({}, driver, {[key]: value});
 }
 
 //function nondestructivelyUpdateObject(obj, key, value) {
